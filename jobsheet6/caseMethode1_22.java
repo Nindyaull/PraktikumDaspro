@@ -6,7 +6,6 @@ public class caseMethode1_22 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // JUDUL TAMPILAN PERTAMA
         System.out.println("=== INPUT DATA MAHASISWA ===");
         System.out.print("Nama  : ");
         String masukkanNama = sc.nextLine();
@@ -14,7 +13,6 @@ public class caseMethode1_22 {
         long masukkanNIM = sc.nextLong();
         System.out.println();
 
-        // INPUT NILAI PERTAMA
         System.out.println("--- Mata Kuliah 1: Algoritma dan Pemrograman ---");
         System.out.print("Nilai UTS     : ");
         double nilaiUTS = sc.nextDouble();
@@ -24,7 +22,6 @@ public class caseMethode1_22 {
         double nilaiTugas = sc.nextDouble();
         System.out.println();
 
-        // INPUT NILAI KEDUA
         System.out.println("--- Mata Kuliah 2: Struktur Data ---");
         System.out.print("Nilai UTS     : ");
         double nilaiUTS2 = sc.nextDouble();
@@ -34,7 +31,6 @@ public class caseMethode1_22 {
         double nilaiTugas2 = sc.nextDouble();
         System.out.println();
 
-        // JUDUL TAMPILAN KEDUA
         System.out.println("========== HASIL PENILAIAN AKADEMIK ==========");
         System.out.println("Nama  : " + masukkanNama);
         System.out.println("NIM   : " + masukkanNIM);
