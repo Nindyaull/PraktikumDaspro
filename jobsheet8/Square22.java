@@ -9,7 +9,6 @@ public class Square22 {
         int n = sc.nextInt();
 
         for (int i=1; i<=n; i++) {
-            System.out.print("*");
             for (int j=1; j<=n; j++) {
                 System.out.print("*");
             }
