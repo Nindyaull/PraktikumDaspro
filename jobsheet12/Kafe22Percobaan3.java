@@ -38,17 +38,26 @@ public class Kafe22Percobaan3 {
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("\nMasukkan nomor menu yang ingin Anda pesan: ");
-        int pilihanMenu = sc.nextInt();
-        System.out.print("Masukkan jumlah item yang ingin dipesan: ");
-        int banyakItem = sc.nextInt();
-        sc.nextLine();
-        System.out.print("Masukkan kode promo: ");
-        String kodePromo = sc.nextLine();
+        System.out.print("\nMasukkan jumlah menu: ");
+        int jumlahMenu = sc.nextInt();
+        
+        int totalKeseluruhan = 0;
+        
+        for (int i = 0; i < jumlahMenu; i++) {
+            System.out.print("Masukkan menu ke-" + (i+1) + ": ");
+            int pilihanMenu = sc.nextInt();
+            System.out.print("Masukkan jumlah item yang ingin dipesan: ");
+            int banyakItem = sc.nextInt();
+            System.out.print("Masukkan kode promo: ");
+            sc.nextLine();
+            String kodePromo = sc.nextLine();
+        
+            int totalHarga = hitungTotalHarga22(pilihanMenu, banyakItem, kodePromo); 
+            System.out.println("Total harga untuk pesanan Anda: Rp" + totalHarga);
+            totalKeseluruhan += totalHarga;
+        }
+        System.out.println("\nTotal keseluruhan pesanan: " + totalKeseluruhan);
 
-        int totalHarga = hitungTotalHarga22(pilihanMenu, banyakItem, kodePromo); 
-
-        System.out.println("Total harga untuk pesanan Anda: Rp" + totalHarga);
     }
     
 }
